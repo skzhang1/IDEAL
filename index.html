@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="IDEAL: Influence-Driven Selective Annotations Empower In-context Learners in Large Language Models.">
+  <meta name="keywords" content="In-context learning, IDEAL">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IDEAL: Influence-Driven Selective Annotations Empower In-context Learners in Large Language Models</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">IDEAL: Influence-Driven Selective Annotations Empower In-context Learners in Large Language Models</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/skzhang1">Shaokun Zhang</a><sup>1</sup> </span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://xiaoboxia.github.io">Xiaobo Xia</a><sup>2,🧐,😎</sup> </span>&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://derrickwang005.github.io">Zhaoqing Wang</a><sup>2</sup>&nbsp;&nbsp;
+              </span>
+              <span class="author-block">
+                <a href="https://lhchen.top">Ling-Hao Chen</a><sup>3</sup>&nbsp;&nbsp;
+              </span>
+              <span class="author-block">
+                <a href="https://leoljl.github.io">Jiale Liu</a><sup>4</sup>&nbsp;&nbsp;
+              </span>
+              <span class="author-block">
+                <a href="https://qingyun-wu.github.io">Qingyun Wu</a><sup>1,😎</sup>&nbsp;&nbsp;
+              </span>
+              <span class="author-block">
+                <a href="https://tongliang-liu.github.io">Tongliang Liu</a><sup>2</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Pennsylvania State University  </span>&nbsp;&nbsp;
+              <span class="author-block"><sup>2</sup>The University of Sydney </span>
+              <span class="author-block"><sup>3</sup>Tsinghua University </span>&nbsp;&nbsp;
+              <span class="author-block"><sup>4</sup>Xidian University</span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">🧐 Equal contributions </span>&nbsp;&nbsp;&nbsp;
+              <span class="author-block">😎 Corresponding Author </span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/skzhang1/IDEAL"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+              In-context learning is a promising paradigm that utilizes in-context examples as prompts for the predictions 
+              of large language models. These prompts are crucial for achieving strong performance. However, since the 
+              prompts need to be sampled from a large volume of annotated examples, finding the right prompt may result 
+              in high annotation costs. To address this challenge, this paper introduces an influence-driven selective 
+              annotation method that aims to minimize annotation costs while improving the quality of in-context examples. 
+            </p>
+            <p>
+              The essence of our method is to select a pivotal subset from a large-scale unlabeled data pool to annotate 
+              for the subsequent sampling of prompts. Specifically, a directed graph is first constructed to represent 
+              unlabeled data. Afterward, the influence of candidate unlabeled subsets is quantified with a diffusion 
+              process. A simple yet effective greedy algorithm for unlabeled data selection is lastly introduced. It 
+              iteratively selects the data if it provides a maximum marginal gain with respect to quantified influence.
+            </p>
+            <p>
+              Compared with previous efforts on selective annotations, our influence-driven method works in an 
+              end-to-end manner, avoids an intractable explicit balance between data diversity and representativeness, 
+              and enjoys theoretical support. Experiments confirm the superiority of the proposed method on various 
+              benchmarks, achieving better performance under lower time consumption during subset selection.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section class="section">
+      <div class="container">
+    <div class="columns is-centered">
+      <div class="container is-max-desktop content">
+        <h2 class="title is-3">Motivation</h2>
+  
+        <div class="content has-text-justified">
+          <p>Visualization of the <a href="https://ieeexplore.ieee.org/abstract/document/8295265">information diffusion process</a> of two subsets with equal sizes for SST-5 datasets. 
+          We can observe that: the subset with high influence can achieve better performance by influencing a larger group of examples in the unlabeled data pool compared to the subset with low influence.
+          </p>
+          <p>
+            Based on this, we then propose to quantify the influence of each candidate unlabeled subset in the
+            constructed graph, through a classic independent-cascade diffusion mode.
+          </p>
+          <p></p>
+            <img src="./static/images/intro.png" id="aa" />
+            <p></p>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+  <section class="section">
+    <div class="container">
+  <div class="columns is-centered">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">Method</h2>
+
+      <div class="content has-text-justified">
+        <p>
+          The procedure aims to quantify the influence of each subset of in-context examples. In this procedure, we
+          start with a subset of examples (the red points in (a)). Gradually, the successors of this subset are activated based on
+          the weight p and a random number r sampled from 0 to 1. From (a) to (d). The influence of the subset is determined
+          by the number of points that have been activated.
+        </p>
+          <img src="./static/images/overview.png" id="img_comparison" />
+          
+      </div>
+    </div>
+  </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Animation. -->
+      <div class="columns is-centered">
+        <div class="container is-max-desktop content">
+          <h2 class="title is-3">Results</h2>
+
+          <!-- Interpolating. -->
+          <div class="content has-text-justified">
+            <p>
+              The performance of our method and baselines on 9 different datasets with an annotation budget of 100 and
+              18. We use similar-based prompt retrieval for all methods and report the average results with 3 different runs for each
+              method. We can observe that our method works better than Random and Vote-k in almost all cases (17/18) under two
+              annotation budgets. The best result in each case is bolded.
+            </p>
+            <img src="./static/images/result.png" id="img_comparison" />
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+          <br />
+          <!--/ Interpolating. -->
+      <!--/ Animation. -->
+
+
+      <!-- Concurrent Work. -->
+      <div class="columns is-centered">
+        <div class="container is-max-desktop content">
+          <h2 class="title is-3">Related works</h2>
+
+          <div class="content has-text-justified">
+            <p>
+              1.<a href="https://arxiv.org/abs/2209.01975">Selective Annotation Makes Language Models Better Few-Shot Learners</a>.
+            </p>
+            <p>
+              2.<a href="https://ieeexplore.ieee.org/abstract/document/8295265">Influence Maximization on Social Graphs: A Survey</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Concurrent Work. -->
+
+    </div>
+  </section>
+
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+</code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is forked from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies
+                website</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
