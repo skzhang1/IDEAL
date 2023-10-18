@@ -3,6 +3,12 @@
 ## Introduction
 
 Official implementation for paper **IDEAL: Influence-Driven Selective Annotations Empower In-context Learners in Large Language Models**. 
+
+
+
+In-context learning is a promising paradigm that utilizes in-context examples as prompts for the predictions of large language models. These prompts are crucial for achieving strong performance. However, since the prompts need to be sampled from a large volume of annotated examples, finding the right prompt may result in high annotation costs. To address this challenge, this paper introduces an influence-driven selective annotation method that aims to minimize annotation costs while improving the quality of in-context examples. The essence of our method is
+to select a pivotal subset from a large-scale unlabeled data pool to annotate for the subsequent sampling of prompts. Specifically, a directed graph is first constructed to represent unlabeled data. Afterward, the influence of candidate unlabeled subsets is quantified with a diffusion process. A simple yet effective greedy algorithm for unlabeled data selection is lastly introduced. It iteratively selects the data if it provides a maximum marginal gain with respect to quantified influence. Compared with previous efforts on selective annotations, our influence-driven method works in an end-to-end manner, avoids an intractable explicit balance between data diversity and representativeness, and enjoys theoretical support. Experiments confirm the superiority of the proposed method on various benchmarks, achieving better performance under lower time consumption during subset selection.
+
 ## Experiments
 
 ### **Requirements**
@@ -63,8 +69,19 @@ It will create the conda environment ideal we used.
 
 
 ## References
-[1]: Min, S., Lewis, M., Zettlemoyer, L., & Hajishirzi, H. (2021). Metaicl: Learning to learn in context. arXiv preprint arXiv:2110.15943.
+[1]: Min, Sewon, et al. "Metaicl: Learning to learn in context." arXiv preprint arXiv:2110.15943 (2021).
 
-[2]: Su, H., Kasai, J., Wu, C. H., Shi, W., Wang, T., Xin, J., ... & Yu, T. (2022). Selective annotation makes language models better few-shot learners. arXiv preprint arXiv:2209.01975.
+[2]: Su, Hongjin, et al. "Selective annotation makes language models better few-shot learners." arXiv preprint arXiv:2209.01975 (2022).
 
+
+## Citation
+If you find the code is useful in your research, please cite us
+```
+@article{zhang2023ide,
+  title={IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models},
+  author={Zhang, Shaokun and Xia, Xiaobo and Wang, Zhaoqing and Chen, Ling-Hao and Liu, Jiale and Wu, Qingyun and Liu, Tongliang},
+  journal={arXiv preprint arXiv:2310.10873},
+  year={2023}
+}
+```
 
