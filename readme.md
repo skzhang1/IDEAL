@@ -4,11 +4,11 @@
     <img src="assets/ideal-logo.png" width=100% >
 </div>
 
-[Shaokun Zhang](https://github.com/skzhang1)$^{1*}$, [Xiaobo Xia](https://xiaoboxia.github.io)$^{2*}$, [Zhaoqing Wang](https://derrickwang005.github.io)$^2$, [Ling-Hao Chen](https://lhchen.top)$^3$, [Jiale Liu](https://leoljl.github.io)$^4$, [Qingyun Wu](https://qingyun-wu.github.io)$^1$, [Tongliang Liu](https://tongliang-liu.github.io)$^2$
+[Shaokun Zhang](https://github.com/skzhang1)<sup>1*</sup>, [Xiaobo Xia](https://xiaoboxia.github.io)<sup>2*</sup> [Zhaoqing Wang](https://derrickwang005.github.io)<sup>2</sup>, [Ling-Hao Chen](https://lhchen.top)<sup>3</sup>, [Jiale Liu](https://leoljl.github.io)<sup>4</sup>, [Qingyun Wu](https://qingyun-wu.github.io)<sup>1</sup>, [Tongliang Liu](https://tongliang-liu.github.io)<sup>2</sup>,
 
-$^1$Pennsylvania State University, $^2$The University of Sydney, $^3$Tsinghua University, $^4$Xidian University
+<sup>1</sup>Pennsylvania State University, <sup>2</sup>The University of Sydney, <sup>3</sup>Tsinghua University, <sup>4</sup>Xidian University
 
-$^*$Equal Contribution.
+<sup>*</sup>Equal Contribution.
 <p align="center">
   <a href='https://arxiv.org/abs/2310.10873'>
     <img src='https://img.shields.io/badge/Arxiv-2310.10873-A42C25?style=flat&logo=arXiv&logoColor=A42C25'>
