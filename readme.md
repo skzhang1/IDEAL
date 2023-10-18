@@ -1,6 +1,6 @@
-# IDEAL: Influence-Driven Selective Annotations Empower In-context Learners in Large Language Models
+# IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models
 
-**Official implementation for paper [IDEAL: Influence-Driven Selective Annotations Empower In-context Learners in Large Language Models](https://arxiv.org/abs/2310.10873).**
+**Official implementation for paper [IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models](https://arxiv.org/abs/2310.10873).**
 
 ## Introduction
 
