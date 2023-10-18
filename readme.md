@@ -4,7 +4,7 @@
     <img src="assets/ideal-logo.png" width=100% >
 </div>
 
-[Shaokun Zhang](https://github.com/skzhang1)<sup>1*</sup>, [Xiaobo Xia](https://xiaoboxia.github.io)<sup>2*</sup> [Zhaoqing Wang](https://derrickwang005.github.io)<sup>2</sup>, [Ling-Hao Chen](https://lhchen.top)<sup>3</sup>, [Jiale Liu](https://leoljl.github.io)<sup>4</sup>, [Qingyun Wu](https://qingyun-wu.github.io)<sup>1</sup>, [Tongliang Liu](https://tongliang-liu.github.io)<sup>2</sup>,
+[Shaokun Zhang](https://github.com/skzhang1)<sup>1*</sup>, [Xiaobo Xia](https://xiaoboxia.github.io)<sup>2*</sup>, [Zhaoqing Wang](https://derrickwang005.github.io)<sup>2</sup>, [Ling-Hao Chen](https://lhchen.top)<sup>3</sup>, [Jiale Liu](https://leoljl.github.io)<sup>4</sup>, [Qingyun Wu](https://qingyun-wu.github.io)<sup>1</sup>, [Tongliang Liu](https://tongliang-liu.github.io)<sup>2</sup>
 
 <sup>1</sup>Pennsylvania State University, <sup>2</sup>The University of Sydney, <sup>3</sup>Tsinghua University, <sup>4</sup>Xidian University
 
