@@ -101,7 +101,7 @@ This code is distributed under an [Apache LICENSE](LICENSE). Note that our code 
 
 ## 🌹 Acknowledgement
 
-The code is on the basis of [MetalCL](https://github.com/facebookresearch/MetaICL) and [Vote-$k$](https://github.com/xlang-ai/icl-selective-annotation). Thanks to all contributors!
+The code is on the basis of [MetalCL](https://github.com/facebookresearch/MetaICL) and [Vote-k](https://github.com/xlang-ai/icl-selective-annotation). Thanks to all contributors!
 
 
 ## 🤝🏼 Citation
@@ -115,3 +115,4 @@ If you find the code is useful in your research, please cite us:
 }
 ```
 
+If you have any question, please contact at: shaokun [DOT] zhang [AT] psu [DOT] edu, xiaoboxia [DOT] uni [AT] gmail [DOT] com.
