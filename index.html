@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="IDEAL: Influence-Driven Selective Annotations Empower In-context Learners in Large Language Models.">
-  <meta name="keywords" content="In-context learning, IDEAL">
+    content="IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models.">
+  <meta name="keywords" content="In-Context learning, IDEAL">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IDEAL: Influence-Driven Selective Annotations Empower In-context Learners in Large Language Models</title>
+  <title>IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -47,7 +47,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">IDEAL: Influence-Driven Selective Annotations Empower In-context Learners in Large Language Models</h1>
+            <h1 class="title is-1 publication-title">IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://github.com/skzhang1">Shaokun Zhang</a><sup>1,🧐</sup> </span>&nbsp;&nbsp;
@@ -76,7 +76,7 @@
             </div>
             <div class="is-size-5 publication-authors">
               <span class="author-block">🧐 Equal contributions </span>&nbsp;&nbsp;&nbsp;
-              <span class="author-block">😎 Corresponding Author </span>
+              <span class="author-block">😎 Corresponding authors </span>
             </div>
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -114,11 +114,11 @@
           <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
             <p>
-              In-context learning is a promising paradigm that utilizes in-context examples as prompts for the predictions 
+              In-Context learning is a promising paradigm that utilizes In-Context examples as prompts for the predictions 
               of large language models. These prompts are crucial for achieving strong performance. However, since the 
               prompts need to be sampled from a large volume of annotated examples, finding the right prompt may result 
               in high annotation costs. To address this challenge, this paper introduces an influence-driven selective 
-              annotation method that aims to minimize annotation costs while improving the quality of in-context examples. 
+              annotation method that aims to minimize annotation costs while improving the quality of In-Context examples. 
             </p>
             <p>
               The essence of our method is to select a pivotal subset from a large-scale unlabeled data pool to annotate 
@@ -170,9 +170,9 @@
 
       <div class="content has-text-justified">
         <p>
-          The procedure aims to quantify the influence of each subset of in-context examples. In this procedure, we
+          The procedure aims to quantify the influence of each subset of In-Context examples. In this procedure, we
           start with a subset of examples (the red points in (a)). Gradually, the successors of this subset are activated based on
-          the weight p and a random number r sampled from 0 to 1. From (a) to (d). The influence of the subset is determined
+          the edge weight and a random number sampled from 0 to 1. From (a) to (d). The influence of the subset is determined
           by the number of points that have been activated.
         </p>
           <img src="./static/images/overview.png" id="img_comparison" />
@@ -202,6 +202,18 @@
             <p>
             </p>
           </div>
+          <div class="content has-text-justified">
+            <p>
+              We also conduct experiments to investigate the correlation between subset influence and its corresponding In-Context  
+              learning performance. Specifically, we randomly select a collection of example subsets from a large unlabeled data pool.
+              We then evaluate each subset as a prompt and record its performance and influence in the constructed graph, 
+              resulting in a set of influence performance pairs. We visualize the performance of subsets in each influence level. 
+              Our analysis reveals that subsets with larger influence levels could achieve better performance.
+            </p>
+            <img src="./static/images/ablation.png" id="img_comparison" />
+            <p>
+            </p>
+          </div>
         </div>
       </div>
           <br />
@@ -216,10 +228,10 @@
 
           <div class="content has-text-justified">
             <p>
-              1.<a href="https://arxiv.org/abs/2209.01975">Selective Annotation Makes Language Models Better Few-Shot Learners</a>.
+              1.<a href="https://arxiv.org/abs/2209.01975">R1. Selective Annotation Makes Language Models Better Few-Shot Learners</a>.
             </p>
             <p>
-              2.<a href="https://ieeexplore.ieee.org/abstract/document/8295265">Influence Maximization on Social Graphs: A Survey</a>.
+              2.<a href="https://ieeexplore.ieee.org/abstract/document/8295265">R2. Influence Maximization on Social Graphs: A Survey</a>.
             </p>
           </div>
         </div>
@@ -235,8 +247,8 @@
       <h2 class="title">BibTeX</h2>
       <pre><code>
 @article{zhang2023ide,
-  title={IDEAL: Influence-Driven Selective Annotations Empower In-context Learners in Large Language Models},
-  author={Zhang, Shaokun and Xia, Xiaobo and Wang, Zhaoqing and Chen, Lin-Hao and Liu, Jiale and Wu, Qingyun and Liu, Tongliang},
+  title={IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models},
+  author={Zhang, Shaokun and Xia, Xiaobo and Wang, Zhaoqing and Chen, Ling-Hao and Liu, Jiale and Wu, Qingyun and Liu, Tongliang},
   journal={arXiv preprint arXiv:2310.10873},
   year={2023}
 }
