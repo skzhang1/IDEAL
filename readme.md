@@ -28,7 +28,7 @@
   </a>
 </p>
 
-**Official implementation for paper [IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models](https://arxiv.org/abs/2310.10873).**
+**Official implementation for paper (ICLR 2024) [IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models](https://arxiv.org/abs/2310.10873). **
 
 ## 🏠 Abstract
 
